@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Wida</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-sans">
+  <!-- Start Header -->
+  <header style="background: linear-gradient(90deg, rgb(220, 141, 217 , 0.2) 0%, rgb(145, 104, 234 , 0.2) 36.86%, rgb(110, 79, 220 , 0.2) 79.38%)" 
+          class="px-4 lg:px-[5%] z-50 fixed bg-gray-100 w-full top-0 h-16 lg:h-[75px] flex items-center justify-between">
+    <!-- Logo -->
+    <img src="./assets/logo.svg" alt="wida" class="w-28 lg:w-36 h-auto">
+    
+    <!-- Desktop Navigation -->
+    <div class="hidden lg:flex items-center gap-4">
+      <ul class="flex items-center">
+        <li class="text-sm font-medium text-white border-l border-white px-4 lg:px-8 cursor-pointer hover:text-[#6e4fdc] transition-all">الرئيسية</li>
+        <li class="text-sm font-medium text-white border-l border-white px-4 lg:px-8 cursor-pointer hover:text-[#6e4fdc] transition-all">من نحن</li>
+        <li class="text-sm font-medium text-white border-l border-white px-4 lg:px-8 cursor-pointer hover:text-[#6e4fdc] transition-all">الخدمات</li>
+        <li class="text-sm font-medium text-white border-l border-white px-4 lg:px-8 cursor-pointer hover:text-[#6e4fdc] transition-all">الاعمال</li>
+        <li class="text-sm font-medium text-white border-l border-white px-4 lg:px-8 cursor-pointer hover:text-[#6e4fdc] transition-all">المدونة</li>
+        <li class="text-sm font-medium text-white px-4 lg:px-8 cursor-pointer hover:text-[#6e4fdc] transition-all">تواصل معنا</li>
+      </ul>
+    </div>
+    
+    <!-- Mobile Menu Button -->
+    <button style="z-index: 999;" class="lg:hidden text-white" id="mobile-menu-button">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-menu lg:hidden min-h-screen" id="mobile-menu">
+      
+      <ul class="flex flex-col items-center w-full">
+        <li class="w-full text-center py-3 text-white font-medium border-b border-white/50 cursor-pointer hover:text-[#6e4fdc] transition-all">الرئيسية</li>
+        <li class="w-full text-center py-3 text-white font-medium border-b border-white/50 cursor-pointer hover:text-[#6e4fdc] transition-all">من نحن</li>
+        <li class="w-full text-center py-3 text-white font-medium border-b border-white/50 cursor-pointer hover:text-[#6e4fdc] transition-all">الخدمات</li>
+        <li class="w-full text-center py-3 text-white font-medium border-b border-white/50 cursor-pointer hover:text-[#6e4fdc] transition-all">الاعمال</li>
+        <li class="w-full text-center py-3 text-white font-medium border-b border-white/50 cursor-pointer hover:text-[#6e4fdc] transition-all">المدونة</li>
+        <li class="w-full text-center py-3 text-white font-medium cursor-pointer hover:text-[#6e4fdc] transition-all">تواصل معنا</li>
+      </ul>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Hero Section -->
+  <section class="bg-[url(./assets/wida-hero-section.png)] flex flex-col-reverse lg:flex-row items-center justify-center md:justify-between px-4 lg:px-[5%] min-h-screen bg-center bg-cover pt-16 lg:pt-0">
+    <!-- Texts -->
+    <div class="text-center lg:text-right mt-8 lg:mt-0 order-2 lg:order-1">
+      <p class="text-2xl lg:text-[2rem] font-medium text-white">من التخطيط الي الاثر...</p>
+      <h1 class="text-3xl lg:text-[3.7rem] font-bold text-white mt-4">حلول اتصالية متكاملة</h1>
+    </div> 
+    
+    <!-- Social Media Icons -->
+    <div class="flex lg:flex-col items-center justify-center gap-4 mt-8 lg:mt-0 order-1 lg:order-2">
+      <img src="./assets/insta.svg" alt="instagram" class="w-8 h-8 lg:w-10 lg:h-10">  
+      <img src="./assets/x.svg" alt="twitter" class="w-8 h-8 lg:w-10 lg:h-10">  
+      <img src="./assets/facebook.svg" alt="facebook" class="w-8 h-8 lg:w-10 lg:h-10">  
+      <img src="./assets/youtube.svg" alt="youtube" class="w-8 h-8 lg:w-10 lg:h-10">  
+    </div>                           
+  </section>                                      
+  <!-- End Hero Section -->
+
+  <!-- Start Section 2 -->
+  <section class="bg-[url(./assets/wida-section-2.png)] py-20 lg:py-40 bg-center bg-cover px-4 lg:px-[5%]">
+    <div class="max-w-full lg:max-w-[650px]">
+      <h3 class="text-right">
+        <p class="text-white text-3xl lg:text-[3.3rem] font-bold">منذ 2014</p>
+        <p  class="text-2xl md:text-[3rem] md:leading-[60px]  font-medium text-white mt-4">نمكـــــــن الكيانــــــــات مــــن بنــــاء حضــــــــور رقمـــــــي متكامـــــــــل .</p>
+      </h3>
+    
+      <p class="mt-8 lg:mt-12 text-white text-lg lg:text-[1.5rem] font-light text-right ">نقدم خدمات شـــاملة في الاتصال المؤسســـي والاعـــلام ترتكز علي الابتكار وتعتمد علي التكامل بين الرؤية والتطبيق</p>
+      <img src="./assets/more-about.png" alt="wida" class="mt-8 lg:mt-12 hover:scale-105 transition-all duration-300 cursor-pointer mx-auto lg:mx-0" >
+    </div>
+
+    <div class="mt-8 lg:mt-12 border-2 border-white px-4 lg:px-10 py-8 lg:py-20 flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
+      <h3 class="text-2xl lg:text-[3rem] text-white font-bold lg:shrink-0 lg:pl-10 lg:w-max lg:border-l border-white text-center lg:text-right md:leading-[60px]">شركات اشمل ,, <br> وتأثير ابعد</h3>
+      <h4 class="text-xl lg:text-[2rem] text-white font-medium text-center lg:text-right md:leading-[45px]">في Wida نؤمن ان نجاحنا يرتبط بنجاح شــــركائنا, لذلك نســعي دوما الي بناء علاقة متينة تقوم علي الثقة, الابتكار, والتكامل لنصنع معنا قصصا تروي اعمالا تلهم</h4>
+    </div>
+  </section>                                      
+  <!-- End Section 2 -->
+
+  <!-- Start Section 3 -->
+  <section class="px-4 lg:px-[5%] bg-gray-100 relative lg:h-[1800px]">
+    <div class="flex flex-col lg:flex-row lg:items-center lg:gap-5 lg:flex-wrap lg:absolute lg:top-[-200px] lg:left-[2%] lg:px-[5%] py-8 lg:py-0">
+      <div class="w-full lg:min-w-[450px] lg:flex-1 mb-8 lg:mb-0">
+        <img src="./assets/project.png" alt="project" class="w-full h-64 lg:h-[390px] object-cover">
+        <div class="flex items-center justify-between p-4 bg-gray-100">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium">وزارة الحج والعمرة</h3>
+          <img src="./assets/dots.png" alt="details" class="h-2">
+        </div>
+      </div>
+      <div class="w-full lg:min-w-[450px] lg:flex-1 mb-8 lg:mb-0">
+        <img src="./assets/project.png" alt="project" class="w-full h-64 lg:h-[390px] object-cover">
+        <div class="flex items-center justify-between p-4 bg-gray-100">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium">هيئة مدن الصناعية</h3>
+          <img src="./assets/dots.png" alt="details" class="h-2">
+        </div>
+      </div>
+      <div class="w-full lg:min-w-[450px] lg:flex-1 mb-8 lg:mb-0">
+        <img src="./assets/project.png" alt="project" class="w-full h-64 lg:h-[390px] object-cover">
+        <div class="flex items-center justify-between p-4 bg-gray-100">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium">وقاء</h3>
+          <img src="./assets/dots.png" alt="details" class="h-2">
+        </div>
+      </div>
+      <div class="w-full lg:min-w-[450px] lg:flex-1 mb-8 lg:mb-0">
+        <img src="./assets/project.png" alt="project" class="w-full h-64 lg:h-[390px] object-cover">
+        <div class="flex items-center justify-between p-4 bg-gray-100">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium">هيئة رعاية الاشخاص ذو الاعاقة</h3>
+          <img src="./assets/dots.png" alt="details" class="h-2">
+        </div>
+      </div>
+      <div class="w-full lg:min-w-[450px] lg:flex-1 mb-8 lg:mb-0">
+        <img src="./assets/project.png" alt="project" class="w-full h-64 lg:h-[390px] object-cover">
+        <div class="flex items-center justify-between p-4 bg-gray-100">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium">المدفوعات السعودية</h3>
+          <img src="./assets/dots.png" alt="details" class="h-2">
+        </div>
+      </div>
+      <div class="w-full lg:min-w-[450px] lg:flex-1 mb-8 lg:mb-0">
+        <img src="./assets/project.png" alt="project" class="w-full h-64 lg:h-[390px] object-cover">
+        <div class="flex items-center justify-between p-4 bg-gray-100">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium">اروماتيك</h3>
+          <img src="./assets/dots.png" alt="details" class="h-2">
+        </div>
+      </div>
+      <div class="w-full lg:min-w-[450px] lg:flex-1 mb-8 lg:mb-0">
+        <img src="./assets/project.png" alt="project" class="w-full h-64 lg:h-[390px] object-cover">
+        <div class="flex items-center justify-between p-4 bg-gray-100">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium">الرمز</h3>
+          <img src="./assets/dots.png" alt="details" class="h-2">
+        </div>
+      </div>
+      <div class="w-full lg:min-w-[450px] lg:flex-1 mb-8 lg:mb-0">
+        <img src="./assets/project.png" alt="project" class="w-full h-64 lg:h-[390px] object-cover">
+        <div class="flex items-center justify-between p-4 bg-gray-100">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium">سايل</h3>
+          <img src="./assets/dots.png" alt="details" class="h-2">
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center lg:justify-end w-full gap-4 lg:gap-8 mt-4 lg:mt-8">
+        <h4 class="text-xl lg:text-[1.6rem] font-bold text-[#6E4FDC] text-center lg:text-right">شاهد المزيد من الشراكات الناجحة</h4>
+        <img src="./assets/arrow.svg" alt="arrow" class="w-8 h-8 lg:w-10 lg:h-10">
+      </div>
+    </div>
+  </section>                                    
+  <!-- End Section 3 -->
+
+  <!-- Start Section 4 -->
+  <section style="background: linear-gradient(0deg, #FFFFFF 0%, #FEFCFE 46.95%, #FBF4FB 73.78%, #F7E6F6 95.58%, #F1D2F0 114.64%, #E9B8E7 131.92%, #DF99DD 147.69%, #DC8DD9 153.23%);" 
+          class="px-4 lg:px-[5%] py-12 lg:py-20 flex flex-col lg:flex-row items-start gap-8 lg:gap-16 relative overflow-hidden">
+    <img src="./assets/float-arrow.png" class="hidden lg:block right-[-0%] top-[500px] w-[400px] absolute">
+    <div class="w-full lg:w-[300px]">
+      <img src="./assets/small-arrow.png" alt="wida" class="w-7 h-9 lg:w-[28px] lg:h-[36px]">
+      <h4 class="text-2xl lg:text-[2rem] font-bold text-black mt-4 lg:mt-6">خدماتنا</h4>
+      <p class="text-lg lg:text-[1.5rem] font-medium text-black/80 mt-4 lg:mt-6 text-right">هدفنـــا ان يكـــون كـــل مشروع نقطة تحـــول تترجم طموحات عملائنا الي اثــر ملموس وتأثير مستدام</p>
+    </div>
+    <div class="flex-1 w-full">
+      <div class="flex items-start justify-between border-b-[3px] border-[#dc8dd9c0] py-4 lg:py-8">
+        <div class="w-full lg:w-auto">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium text-right">التخطيط والاتصال الاستراتيجي</h3>
+          <p class="text-[#6E4FDC] text-base lg:text-[1.1rem] font-medium mt-2 lg:mt-3 text-right">
+            تحول الرؤية الي خارطة طريق واضحة تعزز الضحور وتحقق الاهداف
+          </p>
+        </div>
+        <img src="./assets/small-arrow.png" alt="wida" class="w-4 h-3 lg:w-[17px] lg:h-[15px] mt-2 lg:mt-0">
+      </div>
+      <div class="flex items-start justify-between border-b-[3px] border-[#dc8dd9c0] py-4 lg:py-8">
+        <div class="w-full lg:w-auto">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium text-right">الحملات الاتصالية والعلاقات العامة</h3>
+          <p class="text-[#6E4FDC] text-base lg:text-[1.1rem] font-medium mt-2 lg:mt-3 text-right">
+          من الفكرة حتي قياس الاثر...حملات متكاملة تصنع الفرق
+          </p>
+        </div>
+        <img src="./assets/small-arrow.png" alt="wida" class="w-4 h-3 lg:w-[17px] lg:h-[15px] mt-2 lg:mt-0">
+      </div>
+      <div class="flex items-start justify-between border-b-[3px] border-[#dc8dd9c0] py-4 lg:py-8">
+        <div class="w-full lg:w-auto">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium text-right">المراكز الاعلامية</h3>
+          <p class="text-[#6E4FDC] text-base lg:text-[1.1rem] font-medium mt-2 lg:mt-3 text-right">
+      ندير الحدث ونروي القصة بدقة واحترافية
+          </p>
+        </div>
+        <img src="./assets/small-arrow.png" alt="wida" class="w-4 h-3 lg:w-[17px] lg:h-[15px] mt-2 lg:mt-0">
+      </div>
+      <div class="flex items-start justify-between border-b-[3px] border-[#dc8dd9c0] py-4 lg:py-8">
+        <div class="w-full lg:w-auto">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium text-right">صناعة المحتوي الابداعي</h3>
+          <p class="text-[#6E4FDC] text-base lg:text-[1.1rem] font-medium mt-2 lg:mt-3 text-right">
+      كلمات تلهم وتقنع لتصنع حضورا مؤثرا
+          </p>
+        </div>
+        <img src="./assets/small-arrow.png" alt="wida" class="w-4 h-3 lg:w-[17px] lg:h-[15px] mt-2 lg:mt-0">
+      </div>
+      <div class="flex items-start justify-between border-b-[3px] border-[#dc8dd9c0] py-4 lg:py-8">
+        <div class="w-full lg:w-auto">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium text-right">ادارة التواجد الرقمي</h3>
+          <p class="text-[#6E4FDC] text-base lg:text-[1.1rem] font-medium mt-2 lg:mt-3 text-right">
+  نصنع حضور رقمي فعال.. يصل ويؤثر
+          </p>
+        </div>
+        <img src="./assets/small-arrow.png" alt="wida" class="w-4 h-3 lg:w-[17px] lg:h-[15px] mt-2 lg:mt-0">
+      </div>
+      <div class="flex items-start justify-between border-b-[3px] border-[#dc8dd9c0] py-4 lg:py-8">
+        <div class="w-full lg:w-auto">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium text-right">ابتكار المحتوي البصري</h3>
+          <p class="text-[#6E4FDC] text-base lg:text-[1.1rem] font-medium mt-2 lg:mt-3 text-right">
+  حلول بصرية ومرئية تبرز هويتك وتلهم جمهورك
+          </p>
+        </div>
+        <img src="./assets/small-arrow.png" alt="wida" class="w-4 h-3 lg:w-[17px] lg:h-[15px] mt-2 lg:mt-0">
+      </div>
+      <div class="flex items-start justify-between border-b-[3px] border-[#dc8dd9c0] py-4 lg:py-8">
+        <div class="w-full lg:w-auto">
+          <h3 class="text-black text-lg lg:text-[1.5rem] font-medium text-right">الرصد والتحليل وادارة السمعة</h3>
+          <p class="text-[#6E4FDC] text-base lg:text-[1.1rem] font-medium mt-2 lg:mt-3 text-right">
+  نقرأ البيانات بدقة, ونرصد التفاعل, لنمنحك قرارات أدق وحضورا أقوي
+          </p>
+        </div>
+        <img src="./assets/small-arrow.png" alt="wida" class="w-4 h-3 lg:w-[17px] lg:h-[15px] mt-2 lg:mt-0">
+      </div>
+    </div>
+  </section>                                  
+  <!-- End Section 4 -->
+
+  <!-- Start Section 5 -->
+  <section class="px-4 lg:px-[5%] bg-[#6E4FDC] py-12 lg:py-0 lg:h-min flex flex-col lg:flex-row items-center justify-center gap-8">
+    <div class="mt-0 lg:mt-12 order-2 lg:order-1">
+      <h3 class="text-white text-2xl lg:text-[2.7rem] font-bold text-center lg:text-right">نجاحـــــــــــات برؤيــــــــــــة</h3>
+      <h3 class="text-white/80 text-xl lg:text-[2.1rem] font-medium text-center lg:text-right mt-2">اوســـــــــع واثــــــــــر أشمــــــــــــــل</h3>
+      <div class="flex items-center justify-center lg:justify-start mt-5 gap-4 flex-wrap max-w-full lg:max-w-[600px]">
+        <div style="background: linear-gradient(60.63deg, rgba(255, 255, 255, 0) 1.61%, rgba(255, 255, 255, 0.0152) 21.26%, rgba(255, 255, 255, 0.0611) 40.36%, rgba(255, 255, 255, 0.1378) 59.24%, rgba(255, 255, 255, 0.2454) 78%, rgba(255, 255, 255, 0.3826) 96.5%, rgba(255, 255, 255, 0.4) 98.57%);" 
+             class="flex p-3 gap-4 border border-white items-center w-full lg:max-w-[270px] mb-4">
+          <h3 class="text-white text-2xl lg:text-[2rem] font-bold">275+</h3>
+          <div>
+            <h4 class="text-lg lg:text-[1.3rem] text-white font-medium">مشروع ناجح</h4>
+            <p class="text-sm text-white font-light mt-2">ترك اثرا ملموسا لدي عملائنا</p>
+          </div>
+        </div>
+        <div style="background: linear-gradient(60.63deg, rgba(255, 255, 255, 0) 1.61%, rgba(255, 255, 255, 0.0152) 21.26%, rgba(255, 255, 255, 0.0611) 40.36%, rgba(255, 255, 255, 0.1378) 59.24%, rgba(255, 255, 255, 0.2454) 78%, rgba(255, 255, 255, 0.3826) 96.5%, rgba(255, 255, 255, 0.4) 98.57%);" 
+             class="flex p-3 gap-4 border border-white items-center w-full lg:max-w-[270px] mb-4">
+          <h3 class="text-white text-2xl lg:text-[2rem] font-bold">275+</h3>
+          <div>
+            <h4 class="text-lg lg:text-[1.3rem] text-white font-medium">مشروع ناجح</h4>
+            <p class="text-sm text-white font-light mt-2">ترك اثرا ملموسا لدي عملائنا</p>
+          </div>
+        </div>
+        <div style="background: linear-gradient(60.63deg, rgba(255, 255, 255, 0) 1.61%, rgba(255, 255, 255, 0.0152) 21.26%, rgba(255, 255, 255, 0.0611) 40.36%, rgba(255, 255, 255, 0.1378) 59.24%, rgba(255, 255, 255, 0.2454) 78%, rgba(255, 255, 255, 0.3826) 96.5%, rgba(255, 255, 255, 0.4) 98.57%);" 
+             class="flex p-3 gap-4 border border-white items-center w-full lg:max-w-[270px] mb-4">
+          <h3 class="text-white text-2xl lg:text-[2rem] font-bold">275+</h3>
+          <div>
+            <h4 class="text-lg lg:text-[1.3rem] text-white font-medium">مشروع ناجح</h4>
+            <p class="text-sm text-white font-light mt-2">ترك اثرا ملموسا لدي عملائنا</p>
+          </div>
+        </div>
+        <div style="background: linear-gradient(60.63deg, rgba(255, 255, 255, 0) 1.61%, rgba(255, 255, 255, 0.0152) 21.26%, rgba(255, 255, 255, 0.0611) 40.36%, rgba(255, 255, 255, 0.1378) 59.24%, rgba(255, 255, 255, 0.2454) 78%, rgba(255, 255, 255, 0.3826) 96.5%, rgba(255, 255, 255, 0.4) 98.57%);" 
+             class="flex p-3 gap-4 border border-white items-center w-full lg:max-w-[270px] mb-4">
+          <h3 class="text-white text-2xl lg:text-[2rem] font-bold">275+</h3>
+          <div>
+            <h4 class="text-lg lg:text-[1.3rem] text-white font-medium">مشروع ناجح</h4>
+            <p class="text-sm text-white font-light mt-2">ترك اثرا ملموسا لدي عملائنا</p>
+          </div>
+        </div>
+        <div style="background: linear-gradient(60.63deg, rgba(255, 255, 255, 0) 1.61%, rgba(255, 255, 255, 0.0152) 21.26%, rgba(255, 255, 255, 0.0611) 40.36%, rgba(255, 255, 255, 0.1378) 59.24%, rgba(255, 255, 255, 0.2454) 78%, rgba(255, 255, 255, 0.3826) 96.5%, rgba(255, 255, 255, 0.4) 98.57%);" 
+             class="flex p-3 gap-4 border border-white items-center w-full lg:max-w-[270px] mb-4">
+          <h3 class="text-white text-2xl lg:text-[2rem] font-bold">275+</h3>
+          <div>
+            <h4 class="text-lg lg:text-[1.3rem] text-white font-medium">مشروع ناجح</h4>
+            <p class="text-sm text-white font-light mt-2">ترك اثرا ملموسا لدي عملائنا</p>
+          </div>
+        </div>
+        <div style="background: linear-gradient(60.63deg, rgba(255, 255, 255, 0) 1.61%, rgba(255, 255, 255, 0.0152) 21.26%, rgba(255, 255, 255, 0.0611) 40.36%, rgba(255, 255, 255, 0.1378) 59.24%, rgba(255, 255, 255, 0.2454) 78%, rgba(255, 255, 255, 0.3826) 96.5%, rgba(255, 255, 255, 0.4) 98.57%);" 
+             class="flex p-3 gap-4 border border-white items-center w-full lg:max-w-[270px] mb-4">
+          <h3 class="text-white text-2xl lg:text-[2rem] font-bold">275+</h3>
+          <div>
+            <h4 class="text-lg lg:text-[1.3rem] text-white font-medium">مشروع ناجح</h4>
+            <p class="text-sm text-white font-light mt-2">ترك اثرا ملموسا لدي عملائنا</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h-64 lg:h-[570px] pt-0 lg:pt-20 w-full lg:w-[500px] order-1 lg:order-2">
+      <img src="./assets/wida-team.png" alt="team" class="w-full h-full object-cover">
+    </div>
+  </section>                                  
+  <!-- End Section 5 -->
+
+  <!-- Start Section 6 -->
+  <section class="px-4 lg:px-[5%] py-12 lg:py-20 bg-black">
+    <div class="flex items-center gap-4 lg:gap-8">
+      <img src="./assets/small-arrow.png" alt="arrow" class="w-6 h-6 lg:w-8 lg:h-8">
+      <h4 class="text-xl lg:text-[2rem] text-white font-medium">افكار اتصالية....لتأثير اوسع</h4>
+    </div>    
+    <div class="mt-8 lg:mt-12 flex flex-col lg:flex-row items-end gap-4 lg:gap-8">
+      <div style="background: linear-gradient(247.78deg, rgba(255, 255, 255, 0) 1.26%, rgba(255, 255, 255, 0.0152) 21.03%, rgba(255, 255, 255, 0.0611) 40.25%, rgba(255, 255, 255, 0.1378) 59.26%, rgba(255, 255, 255, 0.2454) 78.13%, rgba(255, 255, 255, 0.3826) 96.75%, rgba(255, 255, 255, 0.4) 98.84%);"
+           class="w-full lg:flex-1 p-4">
+        <p style="background: linear-gradient(247.78deg, rgba(255, 255, 255, 0) 1.26%, rgba(255, 255, 255, 0.0152) 21.03%, rgba(255, 255, 255, 0.0611) 40.25%, rgba(255, 255, 255, 0.1378) 59.26%, rgba(255, 255, 255, 0.2454) 78.13%, rgba(255, 255, 255, 0.3826) 96.75%, rgba(255, 255, 255, 0.4) 98.84%);"
+           class="text-white text-base p-3 text-right">7 مستشفي الملك فيصل التخصصي</p>
+        <img src="./assets/section6.png" class="w-full h-48 lg:h-[400px] mt-4" alt="">
+      </div>
+      <div style="background: linear-gradient(247.78deg, rgba(255, 255, 255, 0) 1.26%, rgba(255, 255, 255, 0.0152) 21.03%, rgba(255, 255, 255, 0.0611) 40.25%, rgba(255, 255, 255, 0.1378) 59.26%, rgba(255, 255, 255, 0.2454) 78.13%, rgba(255, 255, 255, 0.3826) 96.75%, rgba(255, 255, 255, 0.4) 98.84%);"
+           class="w-full lg:flex-1 p-4">
+        <p style="background: linear-gradient(247.78deg, rgba(255, 255, 255, 0) 1.26%, rgba(255, 255, 255, 0.0152) 21.03%, rgba(255, 255, 255, 0.0611) 40.25%, rgba(255, 255, 255, 0.1378) 59.26%, rgba(255, 255, 255, 0.2454) 78.13%, rgba(255, 255, 255, 0.3826) 96.75%, rgba(255, 255, 255, 0.4) 98.84%);"
+           class="text-white text-base p-3 text-right">7 مستشفي الملك فيصل التخصصي</p>
+        <img src="./assets/section6.png" class="w-full h-52 lg:h-[430px] mt-4" alt="">
+      </div>
+      <div style="background: linear-gradient(247.78deg, rgba(255, 255, 255, 0) 1.26%, rgba(255, 255, 255, 0.0152) 21.03%, rgba(255, 255, 255, 0.0611) 40.25%, rgba(255, 255, 255, 0.1378) 59.26%, rgba(255, 255, 255, 0.2454) 78.13%, rgba(255, 255, 255, 0.3826) 96.75%, rgba(255, 255, 255, 0.4) 98.84%);"
+           class="w-full lg:flex-1 p-4">
+        <p style="background: linear-gradient(247.78deg, rgba(255, 255, 255, 0) 1.26%, rgba(255, 255, 255, 0.0152) 21.03%, rgba(255, 255, 255, 0.0611) 40.25%, rgba(255, 255, 255, 0.1378) 59.26%, rgba(255, 255, 255, 0.2454) 78.13%, rgba(255, 255, 255, 0.3826) 96.75%, rgba(255, 255, 255, 0.4) 98.84%);"
+           class="text-white text-base p-3 text-right">7 مستشفي الملك فيصل التخصصي</p>
+        <img src="./assets/section6.png" class="w-full h-48 lg:h-[400px] mt-4" alt="">
+      </div>
+    </div>
+  </section>                            
+  <!-- End Section 6 -->
+
+  <!-- Start Section 7 -->
+  <section class="bg-gray-100 px-4 lg:px-[5%] py-12 lg:py-20">
+    <div class="flex items-center gap-4 lg:gap-8">
+      <img src="./assets/small-arrow.png" alt="arrow" class="w-6 h-6 lg:w-8 lg:h-8">
+      <h4 class="text-xl lg:text-[2rem] text-black font-bold">كل طموح.. يعني قصة نجاح</h4>
+    </div>
+    <div class="grid mt-6 lg:mt-8 grid-cols-2 lg:grid-cols-6 gap-3 lg:gap-4">
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo1.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo2.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo3.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo4.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo5.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo1.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo1.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo2.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo3.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo4.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo5.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+      <div class="bg-white px-3 lg:px-5 py-3 lg:py-4 rounded flex items-center justify-center"> 
+        <img src="./assets/logo1.svg" alt="logo" class="w-20 lg:w-28 h-auto">
+      </div>
+    </div>
+  </section>                                
+  <!-- End Section 7 -->
+
+  <!-- Start Footer -->
+  <footer style="background: linear-gradient(339.16deg, #DC8DD9 -1.14%, #9168EA 32.64%, #6E4FDC 71.61%);" 
+          class="md:h-auto lg:h-[450px] px-4 lg:px-[5%] py-12 lg:py-20">
+    <div class="flex flex-col lg:flex-row items-center gap-5 border-b border-white pb-8 lg:pb-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-4 lg:grid-rows-4 gap-y-3 lg:gap-y-5 gap-x-0 lg:gap-x-12 w-full lg:w-auto">
+        <div class="flex items-center gap-3">
+          <img src="./assets/white-arrow.png" class="w-4 h-4 lg:w-5 lg:h-5" alt="">
+          <span class="text-base lg:text-[1.1rem] text-white font-medium">تصفح</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/white-arrow.png" class="w-4 h-4 lg:w-5 lg:h-5" alt="">
+          <span class="text-base lg:text-[1.1rem] text-white font-medium">السوشيال</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/line-arrow.png" class="w-4 h-4 lg:w-5 lg:h-5" alt="">
+          <span class="text-base lg:text-[1.1rem] text-white font-medium">الصفحة الرئيسية</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/line-arrow.png" class="w-4 h-4 lg:w-5 lg:h-5" alt="">
+          <span class="text-base lg:text-[1.1rem] text-white font-medium">أكس</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/line-arrow.png" class="w-4 h-4 lg:w-5 lg:h-5" alt="">
+          <span class="text-base lg:text-[1.1rem] text-white font-medium">صنع في Wida</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/line-arrow.png" class="w-4 h-4 lg:w-5 lg:h-5" alt="">
+          <span class="text-base lg:text-[1.1rem] text-white font-medium">تيك توك</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/line-arrow.png" class="w-4 h-4 lg:w-5 lg:h-5" alt="">
+          <span class="text-base lg:text-[1.1rem] text-white font-medium">المشاريع</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/line-arrow.png" class="w-4 h-4 lg:w-5 lg:h-5" alt="">
+          <span class="text-base lg:text-[1.1rem] text-white font-medium">انستجرام</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/line-arrow.png" class="w-4 h-4 lg:w-5 lg:h-5" alt="">
+          <span class="text-base lg:text-[1.1rem] text-white font-medium">المدونة</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/line-arrow.png" class="w-4 h-4 lg:w-5 lg:h-5" alt="">
+          <span class="text-base lg:text-[1.1rem] text-white font-medium">لينكد أن</span>
+        </div>
+      </div>
+      <div class="bg-black/10 w-full lg:w-auto h-full flex flex-col lg:flex-row items-center gap-5 mt-4 lg:mt-0">
+        <div class="flex-1 flex flex-col justify-end items-center lg:items-end text-center lg:text-right">
+          <h3 class="text-white text-lg lg:text-[1.5rem] font-light">Where simplicity meets depth</h3>
+          <div class="mt-4 lg:mt-5 flex flex-col lg:flex-row items-center lg:items-end gap-4 lg:gap-8">
+            <div>
+              <p class="text-sm lg:text-base font-light text-white">Lorem ipsum, dolor sit amet </p>
+              <p class="text-sm lg:text-base font-light text-white">Lorem ipsum, dolor sit amet </p>
+            </div>
+            <div>
+              <p class="text-sm lg:text-base font-light text-white">Lorem ipsum, dolor sit amet </p>
+              <p class="text-sm lg:text-base font-light text-white">Lorem ipsum, dolor sit amet </p>
+              <p class="text-sm lg:text-base font-light text-white">Lorem ipsum, dolor sit amet </p>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/map.png" alt="map" class="w-full lg:w-[30%] h-32 lg:h-full object-cover mt-4 lg:mt-0">
+      </div>
+    </div>
+    <div class="text-center mt-6">
+      <h4 class="text-white text-lg lg:text-[1.6rem] font-medium">جميع الحقوق محفوظة Wida 2025</h4>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const body = document.querySelector("body")
+      mobileMenu.classList.toggle('active');
+      body.classList.toggle('hide');
+    });
+  </script>
+</body>
+</html>

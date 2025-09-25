@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "shaheen";
+  src: url("/assets/Fonts/itfshaheenArabicD/itfshaheenArabicD-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "shaheen";
+  src: url("/assets/Fonts/itfshaheenArabicD/itfshaheenArabicD-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "shaheen";
+  src: url("/assets/Fonts/itfshaheenArabicD/itfshaheenArabicD-light.otf") format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+
+}
+
+
+body {
+  font-family: "shaheen",;
+  direction: rtl;
+}
+    
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+html[dir="rtl"] .rotate-180 {
+  transform: rotate(180deg);
+}
+
+.hide{
+  height: 100dvh;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgb(220, 141, 217 , 0.95) 0%, rgb(145, 104, 234 , 0.95) 36.86%, rgb(110, 79, 220 , 0.95) 79.38%);
+    z-index: 1000;
+    padding: 1rem;
+  }
+}
